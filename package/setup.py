@@ -5,7 +5,7 @@ setup(
   packages = ['streamsx.pmml'],
   include_package_data=True,
   version = streamsx.pmml.__version__,
-  description = 'IBM Streams PMML integration',
+  description = 'PMML integration for IBM Streams',
   long_description = open('DESC.txt').read(),
   author = 'IBM Streams @ github.com',
   author_email = 'hegermar@de.ibm.com',
@@ -19,7 +19,7 @@ setup(
     'Programming Language :: Python :: 3.5',
     'Programming Language :: Python :: 3.6',
   ],
-  install_requires=['streamsx>=1.12.10'],
+  install_requires=['streamsx>=1.12.10,<2.0'],
   
   test_suite='nose.collector',
   tests_require=['nose']
